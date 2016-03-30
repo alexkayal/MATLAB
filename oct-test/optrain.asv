@@ -1,0 +1,21 @@
+clear S yf yh e res;
+
+%set network params and size%
+net = newff(x1,y1,[20 10]);
+net.trainParam.max_fail=30;
+net = train(net,x1,y1);
+
+%set threshold of acceptance%
+% varying threshold th = 0.5;
+
+%simulate and create the final S matrix%
+yf = sim(net,x2); 
+e = y2-yf;
+yh = hardlim (yf - th);
+
+S = [yh' v(q1+1:q2)'];
+[r1,c1] = size(S);
+
+for i = 1:r1
+res(i) = S(i,1)*S(i,2);
+end

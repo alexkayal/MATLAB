@@ -1,0 +1,35 @@
+% wds = window size, ntl = network layer vector, tst = test sample size
+lng = TS.HIGH - TS.LOW;
+lng = fts2mat(lng);
+[ii,jj]= size(lng);
+avh = sum(lng)/ii;
+clear ii jj;
+cls = fts2mat(TS.CLOSE);
+lo = fts2mat(TS.LOW);
+hi = fts2mat(TS.HIGH);
+med = (TS.HIGH + TS.LOW)/2;
+m5 = tsmovavg(cls,'s',5);
+m10 = tsmovavg(cls,'s',10);
+m20 = tsmovavg(cls,'s',20);
+%m50 = tsmovavg(med,'s',50);
+%m100 = tsmovavg(med,'s',100);
+%macdf = macd(TS);
+%rsi = rsindex(TS);
+
+tinp = [cls lo hi fts2mat(m5) fts2mat(m10) fts2mat(m20)];
+% tinp = [lo hi cls];
+tinp = con2seq(tinp');
+targ = con2seq(cls');
+%tinp(1:99)=[];
+%targ(1:99)=[];
+xin = tinp(end-tst+1:end);
+xout = targ(end-tst+1:end);
+tinp (end-tst+1:end)=[];
+targ (end-tst+1:end)=[];
+d1 = [1:wds];
+d2 = [1:wds];
+Pi = [tinp(1:wds);targ(1:wds)];
+p = tinp(wds+1:end);
+t = targ(wds+1:end);
+yi = [tinp(end-wds+1:end);targ(end-wds+1:end)];
+net = newnarxsp(p,t,d1,d2,ntl);

@@ -1,0 +1,15 @@
+% rx1 : a system that buys and sells randomly.
+
+cls = fts2mat(TS.CLOSE);
+[r,c] = size(cls);
+
+freq = 95;
+
+rand1 = rand;
+if rand>0.5 parray(1,2)= 1; else parray(1,2) = -1;
+
+for i = 1:r
+    rand1 = rand*100;
+    if rand1 > freq;
+        parray(i,1) = cls(i);
+        parray(i,2) = parray(i-1,2)*-1;

@@ -1,0 +1,197 @@
+yo
+int x
+int
+x
+x <- c(3,5,2,5,6)
+x
+z <- c(3,4,5;5;7;8)
+y <-x^2
+y
+print(y)
+mean(y)
+plot(x)
+ls
+ls()
+a=1
+a
+f = (6,7,8)
+f
+f = (4,3,5)
+help
+tobin
+ls()
+source("/Users/alexkayal/Documents/MATLAB/Jan2015/EURUSD_Candlestick_1_D_BID_01.01.2011-01.01.2015.csv")
+dir
+dir()
+cd "Documents/"
+cd "Documents"
+cd "Documents"
+cd Documents
+cd Downloads
+getwd()
+cd ("Documents/")
+cd("Documents/")
+setwd("Documents")
+dir()
+setwd("MATLAB/")
+dir()
+setwd("Jan2015/")
+read.csv("EURUSD_Candlestick_1_D_BID_01.01.2011-01.01.2015.csv")
+eurusd = read.csv("EURUSD_Candlestick_1_D_BID_01.01.2011-01.01.2015.csv")
+eurusd
+names(eurusd)
+attributes(eurusd)
+mean(eurusd)
+eurusd(1)
+eurusd[1]
+eurusd[2]
+eurusd[:,2]
+eurusd[,2]
+$dim
+x = table(eurusd)
+plot(eurusd[3])
+plot(eurusd[2],eurusd[3])
+mean(eurusd[2])
+mean(eurusd[3])
+mean(eurusd[3]$LFBM)
+mean(eurusd$Volume)
+mean(eurusd$Close)
+sum(eurusd$Close)
+sum(eurusd[3])
+sum(eurusd[4])
+sum(eurusd[5])
+plot(eurusd$Close)
+plot(eurusd[5])
+hist(eurusd$Close)
+stripchart(eurusd$Clsoe)
+stripchart(eurusd$Close)
+qqnorm(eurusd$Close)
+plot(eurusd$Time,eurusd$Close)
+lines(eurusd$Close)
+plot(as.Date(eurusd$Time), eurusd$Close)
+plot(as.Time(eurusd$Time), eurusd$Close)
+plot(eurusd$Time, eurusd$Close)
+ggplot
+x <-rnorm(10,sd=5,mean=20)
+x
+x <-rnorm(10,sd=5,mean=20)
+x
+y <-rnorm(10,sd=6,mean=20)
+plot(x,y)
+plot(x,y)
+points(x,y,col=3, pch=2)
+points(x,y,col=3, pch=2)
+plot (eurusd$Close, type="l")
+plot (eurusd$Close, type="l", col="g")
+plot (eurusd$Close, type="l", col="2")
+plot (eurusd$Close, type="l", col=4)
+plot (eurusd$Close, type="l", col=10)
+plot (eurusd$Close, type="l", col=1)
+plot (eurusd$Close, type="l", col=3)
+plot (eurusd$Close, type="l", col=4)
+plot (eurusd$Close, type="l", col=5)
+plot (eurusd$Close, type="l", col=6)
+plot (eurusd$Close, type="l", col=7)
+plot (eurusd$Close, type="l", col=8)
+plot (eurusd$Close, type="l", col=9)
+plot (eurusd$Close, type="l", col=1)
+plot (eurusd$High, type="l", col=2)
+plot (eurusd$Close, eurusd$Time, type="l", col=1)
+plot (as.Date(eurusd$Time), eurusd$Close, type="l", col=1)
+x <-sd(eurusd$Close)
+x
+x <-sd(eurusd$Close[1:5])
+x
+x <-sd(eurusd$Close[1:end])
+x <-sd(eurusd$Close[1:1000])
+x
+g <-eurusd[1:5]
+g
+g
+g <-eurusd$[1:5]
+g <-eurusd[1:5,]
+g
+as.Date(01.01.2011)
+e <- as.Date(01.01.2011)
+plot (eurusd$Close[1:200,])
+plot (eurusd[1:200,]$Close)
+plot (eurusd[1:200,]$Close, type=l)
+plot (eurusd[1:200,]$Close, type="l")
+candlesize <- eurusd$High-eurusd$Low
+hist(candlesize)
+plot (candlesize, type="p")
+plot (eurusd$low, eurusd$Time, type="l", col=1)
+plot (eurusd$Low, eurusd$Time, type="l", col=1)
+plot (eurusd$Close, type="l", col="black")
+plot (eurusd$Low,  type="l", col=1)
+lines (eurusd$High,  type="l", col=2)
+plot (eurusd[1:200,]$Low,  type="l", col=1)
+lines (eurusd[1,200,]$High,  type="l", col=2)
+lines (eurusd[1,200,]$High,  type="l", col=2)
+plot (eurusd[1:200,]$Low,  type="l", col=1)
+lines (eurusd[1:200,]$High,  type="l", col=2)
+y=tvm(pv=10000,i=10,n=10,pmt=NA)
+plot(y)
+macd
+macd
+macdTA
+x = <-macdTA(eurusd$Close, lag1=12, lag2=26)
+macdTA(eurusd$Close, lag1=12, lag2=2
+)
+x = <-macdTA(eurusd$Close, lag1=12, lag2=26)
+c = <-macdTA(eurusd$Close, lag1=12, lag2=26)
+plot (macdTA(eurusd$Close, lag1=12, lag2=26))
+plot (macdTA(eurusd$Close, lag1=12, lag2=26), type="l")
+s = rsiTA(eurusd$Close, lag=14)
+s
+plot(s)
+plot(s, type="l")
+plot(eurusd[1:200,]$Close, type="l")
+lines(SMA(eurusd$Close[1:200,]),col="red", type="l")
+lines(SMA(eurusd[1:200,]$Close),col="red", type="l")
+plot(eurusd[1:200,]$Close, type="l")
+lines(SMA(eurusd[1:200,]$Close, n=14),col="red", type="l")
+plot(eurusd[1:200,]$Close, type="l")
+lines(SMA(eurusd[1:200,]$Close, lag=14),col="red", type="l")
+lines(SMA(eurusd[1:200,]$Close, n=14),col="red", type="l")
+sma <- SMA(eurusd[1:200,]$Close, n=14)
+sma
+plot(sma)
+getFX(Currencies,#
+      from = Sys.Date() - 499,#
+      to = Sys.Date(),#
+      env = parent.frame(),#
+      verbose = FALSE,#
+      warning = TRUE,#
+      auto.assign = TRUE)
+getFX(EUR/USD,#
+      from = Sys.Date() - 499,#
+      to = Sys.Date(),#
+      env = parent.frame(),#
+      verbose = FALSE,#
+      warning = TRUE,#
+      auto.assign = TRUE)
+getFX('EUR/USD',#
+      from = Sys.Date() - 499,#
+      to = Sys.Date(),#
+      env = parent.frame(),#
+      verbose = FALSE,#
+      warning = TRUE,#
+      auto.assign = TRUE)
+EURUSD
+chartSeries("EURUSD")
+chartSeries("EURUSD", type= c)
+chartSeries(EURUSD, type= c)
+chartSeries(EURUSD)
+chartSeries(EURUSD[1:200,])
+chartSeries(EURUSD)
+rechart(EURUSD)
+reChart(EURUSD)
+chartSeries(EURUSD, type = "bars")
+chartSeries(EURUSD, type = c("bars"))
+chartSeries(EURUSD)
+barChart(EURUSD)
+barChart(EURUSD)
+chartSeries(EURUSD)
+barChart(EURUSD)
+barChart(EURUSD)
